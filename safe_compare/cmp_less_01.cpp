@@ -12,7 +12,7 @@ constexpr bool cmp_less(T t, U u) noexcept
     else if constexpr (std::is_signed_v<T>)
         return t < 0 ? true : UT(t) < u;
     else
-        return u < 0 ? false : t < U(u);
+        return u < 0 ? false : t < UU(u);
 }
 
 int main() 
